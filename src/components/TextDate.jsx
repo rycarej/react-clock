@@ -17,13 +17,13 @@ class TextDate extends React.Component {
         let day = this.state.time.getDate();
         const year = this.state.time.getFullYear().toString().slice(2);
         switch(day.toString().slice(-1)) {
-            case 1:
+            case "1":
                 day = `${day}st`;
                 break;
-            case 2:
+            case "2":
                 day = `${day}nd`;
                 break;
-            case 3:
+            case "3":
                 day = `${day}rd`;
                 break;
             default:
